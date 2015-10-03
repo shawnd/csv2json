@@ -4,9 +4,14 @@
 
 import sys
 import json
+import argparse
 
-infile = open("test.csv")
-outfile = open("out.json", "w")
+parser = argparse.ArgumentParser(description='csv filename')
+parser.add_argument('csv')
+args = parser.parse_args()
+inFileName = args.csv
+infile = open(inFileName)
+outfile = open(inFileName.replace(".csv", "")+".json", "w")
 
 first = 0
 header = {}
