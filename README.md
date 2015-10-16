@@ -1,4 +1,5 @@
-*csv2json.py*
+**csv2json.py**
+*Based off of csv2json.py by perhenrik90*
 
 Python script that converts input csv file to output json.
 
